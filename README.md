@@ -32,7 +32,7 @@ Then, migrate:
 
 ```
 $ cd /path/to/your-redmine
-$ rake redmine:plugins:migrate NAME=redmine_default_custom_query RAILS_ENV=production
+$ bundle exec rake redmine:plugins:migrate NAME=redmine_default_custom_query RAILS_ENV=production
 ```
 
 That's all.
@@ -43,7 +43,7 @@ At first, rollback schema:
 
 ```
 $ cd /path/to/your-redmine
-$ rake redmine:plugins:migrate NAME=redmine_default_custom_query VERSION=0 RAILS_ENV=production
+$ bundle exec rake redmine:plugins:migrate NAME=redmine_default_custom_query VERSION=0 RAILS_ENV=production
 ```
 
 Then, remove `plugins/redmine_default_custom_query` directory.
